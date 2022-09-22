@@ -1,5 +1,5 @@
-#ifndef GREGORIAN_CALENDAR_H
-#define GREGORIAN_CALENDAR_H
+#ifndef DATE_ALGORITHMS_H
+#define DATE_ALGORITHMS_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,4 +16,4 @@ double rata_die(date_t);
 date_t inverse_rata_die(long);
 
 
-#endif // GREGORIAN_CALENDAR_H
+#endif // DATE_ALGORITHMS_H

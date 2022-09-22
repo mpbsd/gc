@@ -1,4 +1,4 @@
-#include "gregorian_calendar.h"
+#include "date_algorithms.h"
 
 double
 rata_die(date_t d)
@@ -26,8 +26,8 @@ inverse_rata_die(long rd)
   b = a - a / 4;
   d.year = (100 * b + h) / 36525;
   c = b + z - 365 * d.year - d.year / 4;
-  d.month = (5 * c + 456) / 153;
-  d.day = c - (153 * d.month - 457) / 5;
+  d.month = (int) ((5 * c + 456) / 153);
+  d.day = c - (int) ((153 * d.month - 457) / 5);
 
   if (d.month > 12) {
     d.year += 1;
