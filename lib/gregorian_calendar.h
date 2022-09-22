@@ -5,6 +5,15 @@
 #include <stdlib.h>
 #include <string.h>
 
-int helloworld(void);
+typedef struct {
+  long year;
+  unsigned short month;
+  unsigned short day;
+} date_t;
+
+
+double rata_die(date_t);
+date_t inverse_rata_die(long);
+
 
 #endif // GREGORIAN_CALENDAR_H
